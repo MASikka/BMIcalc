@@ -12,7 +12,7 @@ app.post('/', function(req,res){
     let weight=Number(req.body.weight);
     let result = (weight/(height*height)).toFixed(2);
     let bmi = `Your BMI is: ${result}<br>`;
-    if(result<=18.5){
+    if(result<=19){
         res.send(`${bmi} Underweight.`);
     }
     else if(result<=24.9){
